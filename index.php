@@ -17,7 +17,7 @@
    <img src="imgs/american.jpg" >
     <h3>Corte americano <br>
 R$ 25,00
-    </h2> 
+    </h3> 
 
     <button  >Confirmar</button></button>
 
@@ -26,17 +26,29 @@ R$ 25,00
 <img src="imgs/mid.jpg" >
     <h3>Corte Mid Fade Redondo <br>
         R$ 30,00
-    </h2> 
+    </h3> 
 
-    <button  >Confirmar</button></button>
+    <button  >Confirmar</button></button> <br>
+    <br>
 
 
-    <img class="" src="imgs/ ">
-    <h3>Corte Mid Fade Redondo <br>
+
+    <img class="corte" src="imgs/hihg.jpg">
+    <h3>Corte hihg Fade reto <br>
+        R$ 25,00
+    </h3> 
+    <button  >Confirmar</button></button> <br>
+
+
+
+    <img class="corte" src="imgs/MOICA.jpg">
+    <h3>Corte moicatrem  <br>
         R$ 30,00
-    </h2> 
+    </h3> 
+    <button  >Confirmar</button></button> <br>
 
-    <button  >Confirmar</button></button>
+
+
     </nav>
 </body>
 </html>
