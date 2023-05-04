@@ -2,7 +2,7 @@
 <?php
 include "cabecalho.php";
 include "menu.php";
-include "novo-usuario.php";
+
 ?>
 <link rel="stylesheet" href="index.css">
 <br>
@@ -20,7 +20,7 @@ include "novo-usuario.php";
       <img src="imgs/hihg.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="imgs/mid.jpg" class="d-block w-100" alt="..." width="100px">
+      <img src="imgs/mid.jpg" class="d-block w-100" alt="..." >
     </div>
     <div class="carousel-item">
       <img src="img/redDead-image.jpg" class="d-block w-100" alt="...">
@@ -48,15 +48,10 @@ include "novo-usuario.php";
  
  include "conexao.php";
 
-
  $sql_buscar = "select * from jogo";
 
 
-
-
  $todos_os_jogos = mysqli_query($conexao, $sql_buscar);
-
-
 
 
  while ($um_jogo = mysqli_fetch_assoc($todos_os_jogos)) :
@@ -66,7 +61,7 @@ include "novo-usuario.php";
  <div class="col-md-3 text-center mb-4">
   
 
- <img src="<?php echo $um_jogo["foto"]; ?>" class="img-fluid" style="object-fit: cover; height: 150px; width: 100%; object-position: top center;">
+ <img src="<?php echo $um_jogo["foto"]; ?>" class="img-fluid" style="object-fit: cover; height: 350px; width: 100%; object-position: top center;">
 
  <h5 class="mt-3 mb-3"><?php echo $um_jogo["titulo"]; ?></h5>
 

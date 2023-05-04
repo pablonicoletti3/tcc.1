@@ -4,24 +4,23 @@ h1{
      text-shadow: 2px 4px 5px #857e7e; 
      letter-spacing: 2px; word-spacing: 4px; 
      content: attr(data-text);
-color: #043f8b
+color: #aa0d0d
 
 
 }
-div{
-    background-color: black;
-}
+
 button{
     background-color: rgb(0, 0, 0);
+  
 }
 
 corte1{
     
-    color: rgb(255, 255, 255);
+    color: rgb(185, 19, 19);
 
 }
 sub{
-   color: rgb(218, 27, 27);
+   color: rgb(163, 153, 153);
 }
 foto{  
     background-image: none;

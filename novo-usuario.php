@@ -25,7 +25,15 @@ include "menu.php";
 
  <div class="col">
 
- <form method="post" action="salvar-suario.php">
+ <?php
+      $mensagem = $_GET["msg"] ?? "";
+      if($mensagem == "erro"){
+        echo "<em class ='text=dange'> Usuario cadastrado.</em>";
+      }
+      
+      ?> 
+
+ <form method="post" action="salvarusuario.php">
 
  <input name="nome" required placeholder="Nome"><br>
 

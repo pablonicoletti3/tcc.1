@@ -6,6 +6,7 @@ $senha = $_POST["senha"];
 
 
 
+
 $servidor_bd = "127.0.0.1";
 
 $usuario_bd = "root";

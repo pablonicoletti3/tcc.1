@@ -15,7 +15,7 @@ $banco_de_dados = "nicoletti1";
 
 $conexao = mysqli_connect($servidor_bd, $usuario_bd, $senha_bd, $banco_de_dados);
 
-$sql_inserir_usuario = " insert into usuario (nome, email, senha) VALUES ('$nome','$email','$senha')";
+$sql_inserir_usuario = " insert into usuario (nome, email, senha) VALUES ('$nome','$email','".md5($senha)."')";
 
 $um_usuario= mysqli_query($conexao, $sql_inserir_usuario);
 

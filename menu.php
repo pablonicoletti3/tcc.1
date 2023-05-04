@@ -20,6 +20,12 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li> -->
       </ul>
+      <?php
+      $mensagem = $_GET["msg"] ?? "";
+      if($mensagem == "erro"){
+        echo "<em class ='text=dange'> Usuario ou senha invalido.</em>";
+      }
+      ?>
       <form action="login.php" method="post" class="d-flex">
         <input class="form-control me-2" type="email" placeholder="Email">
         <input class="form-control me-2" type="senha" placeholder="senha">
