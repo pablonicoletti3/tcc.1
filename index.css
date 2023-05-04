@@ -1,20 +1,31 @@
 h1{
-    color: rgb(0, 0, 0);
     text-align: center;
- 
-  
+     text-transform: capitalize; 
+     text-shadow: 2px 4px 5px #857e7e; 
+     letter-spacing: 2px; word-spacing: 4px; 
+     content: attr(data-text);
+color: #043f8b
+
+
 }
-img{
-    margin-right: 40%;
-    width: 10%;
-    float: right;
-    margin-left: 10px;
-  
+div{
+    background-color: black;
 }
 button{
-    background-color: chartreuse;
+    background-color: rgb(0, 0, 0);
 }
-nav{
-    background-image: url("");
-    background-size: cover;
+
+corte1{
+    
+    color: rgb(255, 255, 255);
+
+}
+sub{
+   color: rgb(218, 27, 27);
+}
+foto{  
+    background-image: none;
+}
+h2{
+    color: aliceblue;
 }
