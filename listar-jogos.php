@@ -11,83 +11,88 @@ include "menu-sistema.php";
 
 <div class="container">
 
-    <div class="row">
+        <div class="row">
 
-        <div class="col">
+                <div class="col">
 
-            <h1>Lista de jogos</h1>
+                        <h1>Lista de jogos</h1>
 
-        </div>
+                    </div>
 
-    </div>
+            </div>
 
-    <div class="row">
+        <div class="row">
 
-        <div class="col">
-
-
-
-
- <table border="1">
-
- <tr>
-
- <td>Código</td>
-
-<td>Título</td>
-
-<td>Preço</td>
-
- <td>Ações</td>
-
- </tr>
+                <div class="col">
 
 
 
 
- <?php
+            <table border="1">
 
- include "conexao.php";
+                <tr>
 
-$sql_buscar = "select * from jogo";
+                    <td>Código</td>
 
- $todos_os_jogos = mysqli_query($conexao, $sql_buscar);
+                    <td>Título</td>
 
- while ($um_jogo = mysqli_fetch_assoc($todos_os_jogos)) :
+                    <td>Preço</td>
 
-?>
+                    <td>Ações</td>
 
-<tr>
-
- <td><?php echo $um_jogo["id"]; ?></td>
-
-<td> <?php echo $um_jogo["titulo"]; ?> </td>
-
-
-
- <td>R$ 30,00 <br></td>
-
- </tr>
+                </tr>
 
 
 
 
- <?php
+                <?php
 
- endwhile;
+                include "conexao.php";
 
- mysqli_close($conexao);
+                $sql_buscar = "select * from jogo";
 
-?>
+                $todos_os_jogos = mysqli_query($conexao, $sql_buscar);
 
- </table>
+                while ($um_jogo = mysqli_fetch_assoc($todos_os_jogos)) :
+
+                ?>
+
+                    <tr>
+
+                        <td><?php echo $um_jogo["id"]; ?></td>
+
+                        <td> <?php echo $um_jogo["titulo"]; ?> </td>
+
+                        <td> <?php echo $um_jogo["preco"]; ?> </td>
+
+                        <td> 
+                            excluir
+                            <a href="ver-jogo.php?id=<?php echo $um_jogo["id"]; ?>"> Ver</a> 
+                            <a href="editar-jogos.php?id=<?php echo $um_jogo["id"]; ?>"> Editar Cortes</a> 
+                          </td>
+
+                           
+                    </tr>
 
 
 
 
-</div>
+                <?php
 
-</div>
+                endwhile;
+
+                mysqli_close($conexao);
+
+                ?>
+
+            </table>
+
+
+
+
+        </div>
+
+    </div>
 
 </div>
 

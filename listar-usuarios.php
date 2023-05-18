@@ -28,7 +28,7 @@ include "menu-sistema.php";
 
 
 
- <table class="table" border="1">
+ <table class="table" border ="1">
 
  <tr>
 
@@ -43,7 +43,7 @@ include "menu-sistema.php";
  </tr>
 
 
-
+<a href="editar-jogo.php?id=<?php echo $um_jogo["id"]; ?>">VER</a>
 
  <?php
 
@@ -66,11 +66,13 @@ $sql_buscar = "select * from usuario";
 <td> <?php echo $um_usuario["email"]; ?> </td>
 
 
-<a href="excluir-jogos.php"id=<?php echo $um_usuario["id"]; ?>
+
+<a> href="excluir-jogos.php"id=<?php echo $um_usuario["id"]; ?>
 
  <td> <img src="imgs/1814090_delete_garbage_trash_icon.png" width="30px"> Excluir um usuario
 </a>
 </td>
+
 
  </tr>
 
