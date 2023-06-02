@@ -4,11 +4,11 @@ include "cabecalho.php";
 include "menu.php";
 
 ?>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index1.css">
 <br>
 <br>
 
-<h1>Aqui você encontra o melhor corte para você!</h1>
+<h1>Barber shop</h1>
 <br>
 <br>
 <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -36,10 +36,13 @@ include "menu.php";
   </button>
 </div>
 
-<div class="container mt-5 mb-3">
+<div class="DESTAQUE">
   <div class="row">
     <div class="col-12 text-center"><h1>Cortes em destaque:</h1></div>
     <div class="col-12  text-center mt-3 mb-3"><p></p></div>
+  </div>
+  <div class="img">
+
   </div>
 
   <div class="row">
@@ -66,7 +69,7 @@ include "menu.php";
  <h5 class="mt-3 mb-3"><?php echo $um_jogo["titulo"]; ?></h5>
 
 
-<a href="<?php echo $um_jogo["video"]; ?>" class="corte1">R$ 25,00</a>
+<a href="<?php echo $um_jogo["video"]; ?>" class="corte1"  >R$ 25,00</a>
 
 </div>
  

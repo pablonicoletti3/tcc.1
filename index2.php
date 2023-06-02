@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Agendamento para Barbearia</title>
-	<link rel="stylesheet" href="style.css">
 </head>
 <link rel="stylesheet" href="style1.css">
 <body>
@@ -10,6 +9,8 @@
 	<h1>Agendamento para Barbearia</h1>
 	<form method="post" action="agendar.php">
 
+	<label>nome:</label>
+		<input type="name" name="nome" required><br>
 		<label>Telefone:</label>
 		<input type="tel" name="telefone" required><br>
 		<label>Data:</label>
@@ -18,7 +19,7 @@
 		<input type="time" name="hora" required><br>
 		<br>
 	
-		<button class="salvar" type="submit" value="Agendar" >Agendar</button> 
+		<button class="salvar" type="submit" value="Agendar"  >Agendar</button> 
 		
 	</form>
     </div>
