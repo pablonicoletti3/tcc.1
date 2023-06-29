@@ -42,12 +42,18 @@ include "menu.php";
     <div class="col-12  text-center mt-3 mb-3"><p></p></div>
   </div>
   <div class="img">
-
+  <h2> Quem quer ser bem atendido e voltar para casa
+     mais bonito vem na barbearia Barber Shop! Aqui a
+      gente é amigo do cliente e dá a ele o que há de melhor.
+       Confira os nossos pacotes especiais de barba e 
+    cabelo e na compra de serviços a partir de R$25 ainda ganhe
+     de brinde uma cerveja artesanal! </h2> 
   </div>
 
   <div class="row">
 
   <?php
+ 
  
  include "conexao.php";
 
@@ -60,7 +66,7 @@ include "menu.php";
  while ($um_jogo = mysqli_fetch_assoc($todos_os_jogos)) :
 
 ?>
-
+ 
  <div class="col-md-3 text-center mb-4">
   
 
@@ -76,12 +82,16 @@ include "menu.php";
  <?php
   endwhile;
   ?>
+   <div class="reta">
 
+   </div>
   </div>
   <div class="row mt-5">
     <div class="col-12 text-center"><h2>Entre em contato conosco!</h2></div>
     <div clas="col-12 text-center"><p></p></div>
   </div>
+
+  <nav>
 
   <div class="row">
   <form action="inserir-contato.php" method="post">
@@ -102,6 +112,7 @@ include "menu.php";
   </form>
   </div>
 
+  </nav>
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
