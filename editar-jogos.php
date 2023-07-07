@@ -1,7 +1,7 @@
 <?php
 include "cabecalho.php";
 include "menu-sistema.php";
-
+include "agenda-salvar.php";
 
 $id = $_GET["id"];
 $titulo = $categoria = $foto = $video = "";
@@ -42,3 +42,20 @@ mysqli_close($conexao);
     </div>
 
 </div>
+
+<?php
+include "agenda-salvar.php";
+
+$id = $_GET["nome"];
+$nome = $telefone = $data = $hora = "";
+include "conexao.php";
+$sql_buscar = "select * from jogo where id = $id";
+$todos_os_jogos = mysqli_query($conexao, $sql_buscar);
+while ($um_jogo = mysqli_fetch_assoc($todos_os_jogos)) :
+    $titulo = $um_jogo["nome"];
+    $video = $um_jogo["telefone"];
+    $foto = $um_jogo["data"];
+    $preco = $um_jogo["hora"];
+endwhile;
+mysqli_close($conexao);
+?>

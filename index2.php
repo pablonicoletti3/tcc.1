@@ -7,9 +7,10 @@
 <link rel="stylesheet" href="style1.css">
 
 <body>
-	<div>
-		<h1>Agendamento para Barbearia</h1>
-		<form method="post" action="agendar.php">
+	<form method="post" action="agenda-salvar.php">
+		<div>
+			<h1>Agendamento para Barbearia</h1>
+
 
 			<label>nome:</label>
 			<input type="name" name="nome" required><br>
@@ -22,22 +23,8 @@
 			<br>
 
 			<button class="salvar" type="submit" value="Agendar">Agendar</button>
-
-
-			<?php
-
-
-			include "agenda-salvar.php";
-
-			$sql_buscar = "select * from agendamento";
-
-
-			$todos_os_jogos = mysqli_query($conexao, $sql_buscar);
-
-
-			while ($um_jogo = mysqli_fetch_assoc($todos_os_jogos));
-
-			?>
+		</div>
+	</form>
 
 </body>
 

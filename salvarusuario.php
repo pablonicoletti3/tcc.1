@@ -19,7 +19,6 @@ $sql_inserir_usuario = " insert into usuario (nome, email, senha) VALUES ('$nome
 
 $um_usuario= mysqli_query($conexao, $sql_inserir_usuario);
 
-
 mysqli_close($conexao);
 
 ?>

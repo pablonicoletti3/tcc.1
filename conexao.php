@@ -9,9 +9,6 @@ $senha_bd = "";
 
 $banco_de_dados = "nicoletti1";
 
-
-
-
 $conexao = mysqli_connect($servidor_bd, $usuario_bd, $senha_bd, $banco_de_dados);
 
 
