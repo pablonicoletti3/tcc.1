@@ -41,13 +41,7 @@ include "menu.php";
     <div class="col-12 text-center"><h1>Cortes em destaque:</h1></div>
     <div class="col-12  text-center mt-3 mb-3"><p></p></div>
   </div>
-  <div class="img">
-  <h2> Quem quer ser bem atendido e voltar para casa
-     mais bonito vem na barbearia Barber Shop! Aqui a
-      gente é amigo do cliente e dá a ele o que há de melhor.
-       Confira os nossos pacotes especiais de barba e 
-    cabelo e na compra de serviços a partir de R$25 ainda ganhe
-     de brinde uma cerveja artesanal! </h2> 
+
   </div>
 
   <div class="row">

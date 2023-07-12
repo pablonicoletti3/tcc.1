@@ -15,8 +15,6 @@ while ($um_jogo = mysqli_fetch_assoc($todos_os_jogos)) :
 endwhile;
 mysqli_close($conexao);
 ?>
-
-
 <div class="container">
 
     <div class="row">

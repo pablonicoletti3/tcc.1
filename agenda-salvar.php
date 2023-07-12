@@ -15,9 +15,9 @@ $hora = $_POST["hora"];
 $sql_inserir_usuario = "insert into agendamento (nome, telefone, data, hora, ) values('$nome','$telefone', '$data', '$hora','" . "')";
 
 
-$um_usuario = mysqli_query($conexao, $sql_inserir_usuario);
+$um_agendamento = mysqli_query($conexao, $sql_inserir_agendamento);
 
-echo "alalalalla";
+
 
 
 mysqli_close($conexao);
